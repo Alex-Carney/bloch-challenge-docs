@@ -1,0 +1,565 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>Bloch Sphere Challenge Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#phys-116-report-qublitz-challenge-mode" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Bloch Sphere Challenge Documentation" class="md-header__button md-logo" aria-label="Bloch Sphere Challenge Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bloch Sphere Challenge Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Bloch Sphere Challenge Documentation" class="md-nav__button md-logo" aria-label="Bloch Sphere Challenge Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Bloch Sphere Challenge Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alex-carney-prof-whitfield-phys-116-dartmouth-college" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alex Carney, Prof. Whitfield, PHYS 116, Dartmouth College
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alex Carney, Prof. Whitfield, PHYS 116, Dartmouth College">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forward
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-qublitz-bloch-sphere-challenge-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Qublitz / Bloch Sphere Challenge Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to Qublitz / Bloch Sphere Challenge Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transition-to-challenge-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transition to Challenge Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-application-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Application Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-challenges-and-development-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Challenges and Development Focus
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current Challenges and Development Focus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quaternion-algebra-vs-density-matrix-formalism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quaternion Algebra vs. Density Matrix Formalism
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-and-future-directions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion and Future Directions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alex-carney-prof-whitfield-phys-116-dartmouth-college" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alex Carney, Prof. Whitfield, PHYS 116, Dartmouth College
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alex Carney, Prof. Whitfield, PHYS 116, Dartmouth College">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forward
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-qublitz-bloch-sphere-challenge-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Qublitz / Bloch Sphere Challenge Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to Qublitz / Bloch Sphere Challenge Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transition-to-challenge-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transition to Challenge Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-application-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Application Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-challenges-and-development-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Challenges and Development Focus
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current Challenges and Development Focus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quaternion-algebra-vs-density-matrix-formalism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quaternion Algebra vs. Density Matrix Formalism
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-and-future-directions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion and Future Directions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<h1 id="phys-116-report-qublitz-challenge-mode">PHYS 116 Report - Qublitz Challenge Mode</h1>
+<h3 id="alex-carney-prof-whitfield-phys-116-dartmouth-college">Alex Carney, Prof. Whitfield, PHYS 116, Dartmouth College</h3>
+<h4 id="forward">Forward</h4>
+<p>This documentation serves as my report for PY116 final project. This report will be shorter than the traditional 
+3-page standard report due to the additional work writing the code for additional Qublitz features. </p>
+<p>For this project, I am implemetning a prototype version of the "Bloch Sphere Challenge Mode", which is deployed online
+and accessible here: <a href="https://alex-carney.github.io/bloch-sphere-challenge/">https://alex-carney.github.io/bloch-sphere-challenge/</a>. For developers who are interested, the GitHub
+repository is here: <a href="https://github.com/Alex-Carney/bloch-sphere-challenge">https://github.com/Alex-Carney/bloch-sphere-challenge</a>.</p>
+<p><strong>Note:</strong> As of 4/28, for the draft report submission, the gate buttons are not working properly, more information in the 
+main body of the report. These will be fixed for the final report. Feedback and advice is appreciated!</p>
+<p>The link to the deployed version of Qublitz is here: <a href="https://qublitz-qubit-lab.streamlit.app/">https://qublitz-qubit-lab.streamlit.app/</a>, but this project focuses on challenge mode: </p>
+<h3 id="introduction-to-qublitz-bloch-sphere-challenge-documentation">Introduction to Qublitz / Bloch Sphere Challenge Documentation</h3>
+<h4 id="background">Background</h4>
+<p>Qublitz is a web-based educational tool developed in the FitzLab, aimed at facilitating the learning of basic quantum engineering concepts. This application allows users to interactively design qubit pulses—controlling parameters like intensity and duration—and observe the resulting effects on a qubit state through simulations represented on a Bloch sphere.</p>
+<p>Originally designed to simulate a qubit environment without uncertainty, Qublitz is now advancing towards integrating real-time interactions with actual quantum hardware using the OpenPulse API and AWS BraKet. However, a recently awarded microgrant has shifted the project's immediate focus towards enhancing its educational and gamification aspects.</p>
+<h4 id="transition-to-challenge-mode">Transition to Challenge Mode</h4>
+<p>Following the receipt of a microgrant specifically aimed at enriching the educational experience through gamification, the Qublitz project team has decided to prioritize the development of a new feature called "Challenge Mode". This pivot is intended to make learning more engaging by introducing a game-like element to the application. Challenge Mode will challenge users to apply qubit gate pulses that move the system from the |0⟩ state to target states on the Bloch sphere, incorporating real-world considerations like T1 errors and dephasing time, which add complexity and realism to the simulations. 
+Future additions will incorporate engineering microwave pulses, rather than gates, for additional complexity and realism. </p>
+<h3 id="core-application-overview">Core Application Overview</h3>
+<p>At its core, Qublitz serves as a sophisticated Bloch sphere animation tool. It enables the visualization of quantum gates as animations that move the state vector across the sphere. Initially, this version of the application focuses solely on the basic operations without the integrated Challenge Mode, providing users with a foundational understanding of quantum mechanics through simple gate operations.</p>
+<h3 id="current-challenges-and-development-focus">Current Challenges and Development Focus</h3>
+<p>The development of Qublitz has encountered significant challenges, particularly in the realm of quaternion algebra. The accurate representation and animation of quantum gates, especially the Z gate, have proven problematic, with ongoing issues in achieving correct rotational behaviors. This has led to a pivotal decision point in the project's development:</p>
+<h4 id="quaternion-algebra-vs-density-matrix-formalism">Quaternion Algebra vs. Density Matrix Formalism</h4>
+<p>We are currently evaluating whether to continue utilizing quaternion algebra for representing all gates as pure rotations or to adopt a general density matrix formalism. In the latter approach, gates would be applied as matrix operations to a density matrix, with conversions to quaternions performed solely for animation purposes. This decision will significantly influence the mathematical accuracy and educational effectiveness of the simulations.</p>
+<h3 id="conclusion-and-future-directions">Conclusion and Future Directions</h3>
+<p>As Qublitz continues to evolve, the primary goal remains to provide an interactive and educational platform that not only simulates quantum mechanics but also inspires and educates future quantum engineers. With the introduction of Challenge Mode and the potential integration with actual quantum hardware, Qublitz is poised to become an essential tool in quantum technology education, particularly for courses like ENGS 53: Introduction to Quantum Technologies.</p>
+<p>This documentation serves as a preliminary guide to the current functionalities of Qublitz, outlining the ongoing challenges and the strategic decisions that lie ahead in its development. As we progress, updates and enhancements will be documented to keep users informed and engaged with the latest advancements in quantum education technology.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+    
+  </body>
+</html>
