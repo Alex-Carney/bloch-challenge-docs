@@ -1,0 +1,8 @@
+site_name: Bloch Sphere Challenge Documentation
+theme: material
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
