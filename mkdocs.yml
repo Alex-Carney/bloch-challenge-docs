@@ -1,5 +1,8 @@
 site_name: Bloch Sphere Challenge Documentation
-theme: material
+theme:
+  name: material
+  features:
+    - mathjax
 plugins:
   - search
 
